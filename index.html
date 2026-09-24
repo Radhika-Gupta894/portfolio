@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radhika Gupta | B.Tech Automation & Robotics Engineer | AI/ML & Full-Stack Enthusiast</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Portfolio of Radhika Gupta, an Automation & Robotics Engineering student at PIEMR Indore specializing in AI/ML, Agentic AI, Computer Vision, and Software Development.">
+  <meta name="keywords" content="Radhika Gupta, Automation and Robotics, AI/ML, Machine Learning, Agentic AI, Gen AI, Computer Vision, Portfolio, Indore">
+  <meta name="author" content="Radhika Gupta">
+  <meta property="og:title" content="Radhika Gupta | Automation & Robotics Engineer | AI/ML Enthusiast">
+  <meta property="og:description" content="Analytical problem-solver turning intelligent, data-driven ideas into production-ready software systems.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Outfit (Headings), Plus Jakarta Sans (Body), JetBrains Mono (Code/Tags) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor Micro-interaction -->
+  <div id="custom-cursor" class="custom-cursor" aria-hidden="true"></div>
+  <div id="custom-cursor-follower" class="custom-cursor-follower" aria-hidden="true"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress-bar" class="scroll-progress-bar" role="progressbar" aria-label="Reading progress"></div>
+
+  <!-- Header Navigation -->
+  <header id="main-navbar" class="navbar">
+    <div class="container navbar-container">
+      <a href="#hero" class="logo" aria-label="Radhika Gupta Portfolio Home">
+        <span class="logo-badge">RG</span>
+        <span>Radhika.</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Theme Switch + Resume Button + Mobile Toggle) -->
+      <div class="nav-actions">
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle theme">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <a href="#contact" class="btn-nav-resume">
+          <span>Let's Connect</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </a>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-nav-menu" class="mobile-nav-menu" aria-hidden="true">
+    <ul class="mobile-nav-links">
+      <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+      <li><a href="#about" class="mobile-nav-link">About Me</a></li>
+      <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+      <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+      <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+      <li><a href="#achievements" class="mobile-nav-link">Achievements</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div>
+      <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.75rem;">Get In Touch</p>
+      <a href="mailto:radhikaa1710@email.com" style="color: var(--cta-pink); font-weight: 600;">radhikaa1710@email.com</a>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ====================================================================
+         1. HERO SECTION
+         ==================================================================== -->
+    <section id="hero" class="hero-section">
+      <!-- Interactive Constellation Canvas -->
+      <canvas id="hero-canvas"></canvas>
+      
+      <!-- Ambient Glow Blobs -->
+      <div class="hero-glow-blob hero-glow-blob-1" aria-hidden="true"></div>
+      <div class="hero-glow-blob hero-glow-blob-2" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <!-- Hero Text Content -->
+        <div class="hero-content reveal-on-scroll">
+          <div class="hero-status-pill">
+            <span class="status-dot"></span>
+            <span>Available for AI/ML & Software Roles</span>
+          </div>
+
+          <p class="hero-name-label">Hello, my name is</p>
+          <h1 class="hero-name">
+            Radhika <span class="highlight">Gupta</span>
+          </h1>
+
+          <!-- Dynamic Animated Typing Headline -->
+          <div class="hero-dynamic-headline-container">
+            <span class="headline-prefix">I am a</span>
+            <span id="typewriter-text" class="typewriter-text">B.Tech Automation & Robotics Engineer</span>
+            <span class="typewriter-cursor"></span>
+          </div>
+
+          <p class="hero-tagline">
+            Bridging hardware intelligence, data science, and modern web architectures. Passionate about building intelligent, data-driven, and automated systems that solve real-world challenges.
+          </p>
+
+          <div class="hero-location-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Based in Indore, MP, India</span>
+          </div>
+
+          <!-- Hero CTAs with Hover-Scale Motion -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn-primary" id="hero-cta-projects">
+              <span>View Projects</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#contact" class="btn-secondary" id="hero-cta-contact">
+              <span>Resume / Contact</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero 3D Card Visual / Avatar -->
+        <div class="hero-visual-wrapper reveal-on-scroll stagger-1">
+          <div class="hero-visual-card">
+            <div class="hero-image-inner">
+              <img src="assets/images/radhika-avatar.jpg" alt="Radhika Gupta - Automation and Robotics Engineering Student" loading="eager">
+            </div>
+
+            <!-- Floating Micro-Interaction Badges -->
+            <div class="hero-floating-badge badge-top-left">
+              <div class="badge-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="m4.93 4.93 4.24 4.24"></path><path d="m14.83 9.17 4.24-4.24"></path><path d="m14.83 14.83 4.24 4.24"></path><path d="m9.17 14.83-4.24 4.24"></path></svg>
+              </div>
+              <div>
+                <div style="font-size: 0.75rem; color: var(--text-muted);">Focus</div>
+                <div>AI & Software Engineering</div>
+              </div>
+            </div>
+
+            <div class="hero-floating-badge badge-bottom-right">
+              <div class="badge-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <div>
+                <div style="font-size: 0.75rem; color: var(--text-muted);">Experience</div>
+                <div>Hands-on Builder</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Animated Scroll Down Indicator -->
+      <a href="#about" class="scroll-down-indicator" aria-label="Scroll down to About section">
+        <span>Scroll</span>
+        <div class="mouse-scroll-wheel">
+          <div class="mouse-wheel-dot"></div>
+        </div>
+      </a>
+    </section>
+
+    <!-- ====================================================================
+         2. ABOUT ME SECTION
+         ==================================================================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">Who I Am</span>
+          <h2 class="section-title">Engineering Intelligence & Automation</h2>
+          <p class="section-subtitle">A glimpse into my background, academic journey, and what drives my engineering curiosity.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Narrative Column -->
+          <div class="about-narrative reveal-on-scroll">
+            <p class="about-lead">
+              Building <span>AI-powered applications</span> using <span>LLMs</span>, <span>LangChain</span>, <span>LangGraph</span>, <span>machine learning</span>, and modern <span>full-stack technologies</span>.
+            </p>
+            <p class="about-body">
+              With a growing specialization in Artificial Intelligence, Generative AI, and Agentic workflows, I am not just a conceptual learner—I am an active, hands-on builder who thrives on turning complex mathematical algorithms into functional, high-performance systems.
+            </p>
+            <p class="about-body">
+              Whether designing multimodal biometric pipelines with computer vision and audio signals, orchestrating autonomous multi-agent research swarms, or writing production Django and React code, I obsess over system reliability, clean architecture, and delightful user experiences.
+            </p>
+
+            <!-- Academic Details Card -->
+            <div class="academic-card">
+              <div class="academic-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              </div>
+              <div class="academic-info">
+                <h4>Prestige Institute of Engineering Management and Research (PIEMR)</h4>
+                <p>B.Tech in Automation and Robotics Engineering • Indore, Madhya Pradesh</p>
+                <span class="academic-year">2024 – 2028 (Undergraduate)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Animated Stat Counters Column -->
+          <div class="stats-grid reveal-on-scroll stagger-1">
+            <div class="stat-card">
+              <div class="stat-number-wrapper">
+                <span class="stat-count" data-target="6">0</span>
+                <span class="stat-plus">+</span>
+              </div>
+              <div class="stat-label">Hackathons</div>
+              <div class="stat-subtext">National & College Level</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-number-wrapper">
+                <span class="stat-count" data-target="2">0</span>
+                <span class="stat-plus">+</span>
+              </div>
+              <div class="stat-label">Major AI Systems</div>
+              <div class="stat-subtext">Multimodal & Multi-Agent</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-number-wrapper">
+                <span class="stat-count" data-target="1">0</span>
+              </div>
+              <div class="stat-label">Software Internship</div>
+              <div class="stat-subtext">Event Dhara (Full-Stack)</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-number-wrapper">
+                <span class="stat-count" data-target="100">0</span>
+                <span class="stat-plus">%</span>
+              </div>
+              <div class="stat-label">Hands-On Code</div>
+              <div class="stat-subtext">Idea to Deployment</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         3. TECHNICAL SKILLS SECTION
+         ==================================================================== -->
+    <section id="skills" class="section" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">Expertise</span>
+          <h2 class="section-title">Technical Toolset</h2>
+          <p class="section-subtitle">Categorized skills spanning Artificial Intelligence, Software Development, Databases, and Modern Engineering Tools.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="skills-filter-nav reveal-on-scroll">
+          <button class="filter-tab-btn active" data-filter="all">All Disciplines</button>
+          <button class="filter-tab-btn" data-filter="ai-ds">Data Science & AI</button>
+          <button class="filter-tab-btn" data-filter="languages">Languages</button>
+          <button class="filter-tab-btn" data-filter="databases">Databases</button>
+          <button class="filter-tab-btn" data-filter="tools">Tools & DevOps</button>
+        </div>
+
+        <!-- Skills Grid Container -->
+        <div class="skills-grid-container">
+
+          <!-- Category 1: Data Science & AI -->
+          <div class="skill-category-card reveal-on-scroll stagger-1" data-category="ai-ds">
+            <div class="skill-category-header">
+              <div class="skill-category-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path><path d="M12 6a6 6 0 1 0 6 6 6 6 0 0 0-6-6zm0 10a4 4 0 1 1 4-4 4 4 0 0 1-4 4z"></path></svg>
+              </div>
+              <h3 class="skill-category-title">Data Science & AI</h3>
+            </div>
+            <div class="skill-tags-wrapper">
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>Machine Learning</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>PyTorch</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>LangChain</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>LangGraph</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>Agentic AI</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>Gen AI</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>LLMs & RAG</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>Computer Vision / OpenCV</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>NLP</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>Scikit-learn</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>Pandas & NumPy</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>Data Visualization</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Programming Languages -->
+          <div class="skill-category-card reveal-on-scroll stagger-2" data-category="languages">
+            <div class="skill-category-header">
+              <div class="skill-category-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h3 class="skill-category-title">Languages</h3>
+            </div>
+            <div class="skill-tags-wrapper">
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>Python</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>SQL</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>JavaScript</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>HTML5</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>CSS3 / Modern Styling</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Databases -->
+          <div class="skill-category-card reveal-on-scroll stagger-3" data-category="databases">
+            <div class="skill-category-header">
+              <div class="skill-category-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              </div>
+              <h3 class="skill-category-title">Databases & Storage</h3>
+            </div>
+            <div class="skill-tags-wrapper">
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>PostgreSQL</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>MySQL</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>Supabase</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>Relational Schema Design</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Tools & Platforms -->
+          <div class="skill-category-card reveal-on-scroll stagger-4" data-category="tools">
+            <div class="skill-category-header">
+              <div class="skill-category-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              </div>
+              <h3 class="skill-category-title">Tools & Frameworks</h3>
+            </div>
+            <div class="skill-tags-wrapper">
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>Git & GitHub</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>VS Code</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>Linux Environments</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>Streamlit</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>Jupyter Notebooks</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         4. EXPERIENCE SECTION (TIMELINE)
+         ==================================================================== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">Career Path</span>
+          <h2 class="section-title">Industry Experience</h2>
+          <p class="section-subtitle">Real-world production engineering, client features, and architectural collaboration.</p>
+        </div>
+
+        <div class="experience-timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-marker">
+              <div class="timeline-marker-inner"></div>
+            </div>
+
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Software Development Intern</h3>
+                  <div class="company-meta">
+                    <span>Event Dhara</span>
+                    <span>•</span>
+                    <span class="company-location">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                      Indore, MP
+                    </span>
+                  </div>
+                </div>
+                <div class="timeline-date-badge">Mar 2026 – Jun 2026</div>
+              </div>
+
+              <ul class="timeline-bullets">
+                <li>Architected and implemented responsive, high-performance client-facing frontend features utilizing React.js, modern semantic HTML5, and responsive CSS/JavaScript.</li>
+                <li>Designed and integrated Django REST APIs, backend business logic, database queries, and data validation layers for seamless platform workflows.</li>
+                <li>Collaborated closely with cross-functional engineers on system design specifications, debugging complex full-stack issues, rigorous testing, and web performance optimization.</li>
+              </ul>
+
+              <div class="timeline-tags">
+                <span class="timeline-tag">React.js</span>
+                <span class="timeline-tag">Django REST Framework</span>
+                <span class="timeline-tag">Python</span>
+                <span class="timeline-tag">JavaScript</span>
+                <span class="timeline-tag">API Design</span>
+                <span class="timeline-tag">Database Optimization</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         5. FEATURED PROJECTS SECTION
+         ==================================================================== -->
+    <section id="projects" class="section" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">Portfolio Works</span>
+          <h2 class="section-title">Featured Engineering Projects</h2>
+          <p class="section-subtitle">Deep dive into systems I have designed and deployed, spanning Computer Vision, Audio Machine Learning, and Multi-Agent GenAI.</p>
+        </div>
+
+        <div class="projects-container">
+
+          <!-- Project 1: SnapClass AI -->
+          <article class="project-card reveal-on-scroll">
+            <div class="project-media-col">
+              <img src="assets/images/snapclass-ai.jpg" alt="SnapClass AI Multimodal Biometric Attendance System Interface" class="project-img" loading="lazy">
+              <div class="project-overlay-badge">
+                <span class="pulse-glow"></span>
+                <span>Computer Vision & Audio ML</span>
+              </div>
+            </div>
+
+            <div class="project-info-col">
+              <div>
+                <span class="project-category-meta">Biometric Intelligence</span>
+                <h3 class="project-title">SnapClass AI — Multimodal Biometric Attendance System</h3>
+
+                <div class="project-tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Computer Vision</span>
+                  <span class="tech-tag">Dlib</span>
+                  <span class="tech-tag">Resemblyzer</span>
+                  <span class="tech-tag">Librosa</span>
+                  <span class="tech-tag">Scikit-learn</span>
+                  <span class="tech-tag">Supabase</span>
+                  <span class="tech-tag">Streamlit</span>
+                </div>
+
+                <ul class="project-highlights">
+                  <li>Engineered a multimodal biometric verification pipeline combining concurrent face detection and voiceprint authentication to eliminate proxy attendance in classroom settings.</li>
+                  <li>Extracted 128-D facial feature embeddings via Dlib paired with an SVM classifier for real-time multi-face classification; implemented speaker verification using Resemblyzer and Librosa mel-spectrogram cosine similarity.</li>
+                  <li>Structured cloud database on Supabase PostgreSQL with indexed JSONB embedding vectors and engineered high-efficiency Streamlit caching for real-time video stream processing.</li>
+                </ul>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn-card-action btn-solid btn-view-project-details" data-project="snapclass">
+                  <span>System Architecture</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </button>
+                <a href="https://github.com/Radhika-Gupta894" target="_blank" rel="noopener noreferrer" class="btn-card-action btn-outline">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>GitHub Repo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Multi-Agent Research System -->
+          <article class="project-card reveal-on-scroll">
+            <div class="project-media-col">
+              <img src="assets/images/multi-agent-system.jpg" alt="Multi-Agent Autonomous Research & Fact-Checking System Dashboard" class="project-img" loading="lazy">
+              <div class="project-overlay-badge">
+                <span class="pulse-glow"></span>
+                <span>Agentic AI & LLMs</span>
+              </div>
+            </div>
+
+            <div class="project-info-col">
+              <div>
+                <span class="project-category-meta">Autonomous Agents</span>
+                <h3 class="project-title">Multi-Agent Autonomous Research & Fact-Checking System</h3>
+
+                <div class="project-tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">LangChain</span>
+                  <span class="tech-tag">Google Gemini</span>
+                  <span class="tech-tag">Tavily API</span>
+                  <span class="tech-tag">BeautifulSoup</span>
+                  <span class="tech-tag">Streamlit</span>
+                </div>
+
+                <ul class="project-highlights">
+                  <li>Orchestrated an end-to-end 4-stage multi-agent pipeline (Search Agent, Reader Agent, Writer Agent, Critic Agent) executing autonomous research workflows.</li>
+                  <li>Automated search query generation, structured multi-source web scraping with Tavily and BeautifulSoup, followed by LLM report synthesis with inline citations and adversarial fact-checking.</li>
+                  <li>Implemented production-ready API rate-limit management, automatic retry with exponential backoff, and a reactive Streamlit dashboard providing live step logs and research report downloads.</li>
+                </ul>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn-card-action btn-solid btn-view-project-details" data-project="multiagent">
+                  <span>System Architecture</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </button>
+                <a href="https://github.com/Radhika-Gupta894" target="_blank" rel="noopener noreferrer" class="btn-card-action btn-outline">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>GitHub Repo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         6. ACHIEVEMENTS & EXTRACURRICULARS
+         ==================================================================== -->
+    <section id="achievements" class="section">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">Milestones</span>
+          <h2 class="section-title">Achievements & Extracurriculars</h2>
+          <p class="section-subtitle">Competitive spirit, collaborative hackathons, and relentless problem-solving.</p>
+        </div>
+
+        <div class="achievements-grid">
+          <!-- Card 1 -->
+          <div class="achievement-card reveal-on-scroll stagger-1">
+            <div class="achievement-badge-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <h3>6+ National & College Hackathons</h3>
+            <p>Active participant in multiple competitive hackathons solving complex challenges across web development, artificial intelligence, and algorithmic optimization under strict timeframes.</p>
+            <span class="achievement-pill">Competitive Innovation</span>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="achievement-card reveal-on-scroll stagger-2">
+            <div class="achievement-badge-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <h3>AI & Algorithmic Problem Solving</h3>
+            <p>Recognized for designing resilient agentic and computer vision architectures, earning commendations for pragmatic code quality, clean modularization, and rapid prototyping.</p>
+            <span class="achievement-pill">Technical Excellence</span>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="achievement-card reveal-on-scroll stagger-3">
+            <div class="achievement-badge-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h3>Robotics & Automation Leadership</h3>
+            <p>Hands-on engineering leader collaborating within PIEMR's robotics cohort to develop automated workflows, sensor telemetry pipelines, and intelligent controller prototypes.</p>
+            <span class="achievement-pill">Automation & Robotics</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         7. CONTACT SECTION
+         ==================================================================== -->
+    <section id="contact" class="section" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">Get In Touch</span>
+          <h2 class="section-title">Let's Collaborate</h2>
+          <p class="section-subtitle">Interested in discussing AI engineering, robotics initiatives, or full-stack software development? Reach out!</p>
+        </div>
+
+        <div class="contact-wrapper reveal-on-scroll">
+          <!-- Contact Info & Direct Channels -->
+          <div class="contact-info-col">
+            <div class="contact-info-header">
+              <h3>Start a Conversation</h3>
+              <p>Feel free to connect directly via email, phone, or LinkedIn. I am always excited to discuss innovative technology, open opportunities, and engineering collaborations.</p>
+            </div>
+
+            <div class="contact-channel-list">
+              <!-- Email Item -->
+              <div class="contact-channel-item">
+                <div class="channel-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="channel-text-content">
+                  <span class="channel-label">Email</span>
+                  <a href="mailto:radhikaa1710@email.com" class="channel-value">radhikaa1710@email.com</a>
+                </div>
+                <button class="btn-copy-channel" data-copy="radhikaa1710@email.com" aria-label="Copy Email address">Copy</button>
+              </div>
+
+              <!-- Phone Item -->
+              <div class="contact-channel-item">
+                <div class="channel-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="channel-text-content">
+                  <span class="channel-label">Phone</span>
+                  <a href="tel:+919202393791" class="channel-value">+91-9202393791</a>
+                </div>
+                <button class="btn-copy-channel" data-copy="+919202393791" aria-label="Copy Phone number">Copy</button>
+              </div>
+
+              <!-- Location Item -->
+              <div class="contact-channel-item">
+                <div class="channel-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="channel-text-content">
+                  <span class="channel-label">Location</span>
+                  <span class="channel-value">Indore, Madhya Pradesh, India</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links with Hover-Bounce Animation -->
+            <div class="social-links-row">
+              <a href="https://linkedin.com/in/radhika-gupta-5252ab328" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Radhika Gupta LinkedIn Profile">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+              <a href="https://github.com/Radhika-Gupta894" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Radhika Gupta GitHub Profile">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+              <a href="mailto:radhikaa1710@email.com" class="social-icon-btn" aria-label="Send Email">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </a>
+              <a href="tel:+919202393791" class="social-icon-btn" aria-label="Call Radhika">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form with Floating Labels -->
+          <form id="portfolio-contact-form" class="contact-form" novalidate>
+            <div class="form-group">
+              <input type="text" id="contact-name" class="form-input" placeholder=" " required>
+              <label for="contact-name" class="form-label">Your Name</label>
+            </div>
+
+            <div class="form-group">
+              <input type="email" id="contact-email" class="form-input" placeholder=" " required>
+              <label for="contact-email" class="form-label">Your Email Address</label>
+            </div>
+
+            <div class="form-group">
+              <input type="text" id="contact-subject" class="form-input" placeholder=" ">
+              <label for="contact-subject" class="form-label">Subject / Purpose</label>
+            </div>
+
+            <div class="form-group">
+              <textarea id="contact-message" class="form-textarea" placeholder=" " required></textarea>
+              <label for="contact-message" class="form-label">Your Message</label>
+            </div>
+
+            <button type="submit" id="btn-submit-contact" class="btn-submit-form">
+              <span>Send Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================================================================
+       FOOTER
+       ==================================================================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-copy">
+        <p>© 2026 <strong>Radhika Gupta</strong>. Designed & Crafted with modern web precision.</p>
+        <p style="font-size: 0.82rem; margin-top: 0.25rem;">B.Tech Automation & Robotics Engineering • AI/ML & Software Specialist</p>
+      </div>
+
+      <a href="#hero" class="back-to-top-btn" aria-label="Back to top of the page">
+        <span>Back to Top</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       INTERACTIVE MODALS
+       ==================================================================== -->
+  <!-- Project Architecture Modal -->
+  <div id="project-modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-dynamic-body">
+    <div class="modal-dialog">
+      <button id="modal-close-btn" class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div id="modal-dynamic-body" class="modal-content-inner">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-notification" class="toast-notification" role="alert" aria-live="assertive"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
